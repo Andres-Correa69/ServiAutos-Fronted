@@ -1,0 +1,64 @@
+{
+  "name": "autoservice-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "prettier": "prettier --write .",
+    "format": "npm run prettier && npm run lint -- --fix",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "@tanstack/react-query": "^5.81.5",
+    "axios": "^1.10.0",
+    "classnames": "^2.5.1",
+    "eslint-config-prettier": "^10.1.5",
+    "motion": "^12.23.12",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.6.3",
+    "tailwindcss": "^4.1.11",
+    "zustand": "^5.0.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vite-pwa/assets-generator": "^0.2.6",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^9.18.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "prettier": "3.6.2",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.20.0",
+    "vite": "^6.0.11",
+    "vite-plugin-pwa": "^0.21.1",
+    "vite-plugin-svgr": "^4.3.0",
+    "workbox-core": "^7.3.0",
+    "workbox-window": "^7.3.0"
+  },
+  "overrides": {
+    "sharp": "0.32.6",
+    "sharp-ico": "0.1.5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css,scss,html}": [
+      "prettier --write"
+    ]
+  }
+}

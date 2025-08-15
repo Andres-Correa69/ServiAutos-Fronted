@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* TailwindCSS v4 Custom Colors */
+@theme {
+  --color-primary: #0f172a;
+  --color-secondary: #cececc;
+  --color-error: #ff4731;
+  --color-blue-card-background: #e2f2ff;
+
+  /* Font Families */
+  --default-font-family: "Poppins", sans-serif;
+  --font-display: "Chela One", cursive;
+  --font-heading: "Poppins", sans-serif;
+}
+
+/* SVG styling for imported components */
+svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
